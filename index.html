@@ -1,0 +1,58 @@
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+
+<body> 
+<div data-role="page" id="home">
+	<div data-role="header">
+		<h1>Fun Quiz</h1>
+	</div>
+
+	<div data-role="content">	
+		<p>In the mood for soome fun quizzes? You've come to the right place! Here are some interesting quizzes I found on the Internet:)))</p>		
+    <ul data-role="listview" data-inset="true" data-filter="true">
+      <li><a href="#TvsK">TRUMP vs. KANYE: Who said it?</a></li>
+      <li><a href="#">Rap Song or Wrong Song?</a></li>
+      <li><a href="#">Page Four</a></li>
+      <li><a href="#">Page Five</a></li>
+      <li><a href="#">Page Six</a></li>
+    </ul>
+	</div>
+</div>
+
+
+<div data-role="page" data-dialog="true" id="TvsK">
+  <div data-role="header">
+    <h1>TRUMP vs. KANYE</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Donald Trump and Kanye West both said a lot of shocking things, or well, twitted about it. Can you tell which one of them said what? Take the quiz to figure out!</p>
+    <a href="#TvsKQuiz" class="ui-btn">Start!</a>
+  </div>
+
+</div> 
+
+<div data-role="page" id="TvsKQuiz">
+  <div data-role="header">
+    <h1>TRUMP vs. KANYE</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <img id="tImg" src="https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/10/enhanced/webdr04/enhanced-31163-1454341508-11.jpg?no-auto" alt="HTML tutorial" style="width:500px;height:250px;border:0">
+    <p>Trump or Kanye: Who said it?</p>
+    <fieldset data-role="controlgroup" data-type="horizontal">
+    <input type="radio" name="radio-choice-0" id="radio-choice-0a">
+        <label for="radio-choice-0a"><img id="image1" src="http://www.bostonherald.com/sites/default/files/media/2016/02/17/GOP%202016%20Trump_Prus%20(7)_0.jpg" alt="HTML tutorial" style="width:210px;height:150px;border:0"><br>Donald Trump</label>
+        <input type="radio" name="radio-choice-0" id="radio-choice-0b" class="custom">
+        <label for="radio-choice-0b"><img id="image1" src="https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/10/enhanced/webdr08/enhanced-buzz-14283-1454341638-4.jpg?no-auto" alt="HTML tutorial" style="width:210px;height:150px;border:0"><br>Kanye West</label>
+    </fieldset>
+    <br>
+    <p id="tAnswer"></p>
+    <button id="check" class="ui-btn" onclick="tCheck()">Check Answer</button>
+    <button id="next" class="ui-btn" onclick="tNext()">Next Question</button>
+  </div>
+
+</div> 
+
+
+</body>
