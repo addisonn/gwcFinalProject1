@@ -33,14 +33,19 @@ function tCheck()
 		}
 		$("#check").hide();
 		$("#next").show();
-		//tContent ++;
+		tContent ++;
 	}	
 }
 
 function tNext()
 {
-	if(tContent == 1)
+	$('input[name="radio-choice-0"]').prop('checked', false);
+	$("input[name='radio-choice-0']").checkboxradio("refresh");
+	$("#tAnswer").text("");
+	$("#check").show();
+	$("#next").hide();
+	if(tContent == 2)
 	{
-		
+		document.getElementById("tImg").src = "https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/10/enhanced/webdr02/enhanced-14536-1454341693-5.jpg?no-auto";
 	}
 }
