@@ -1,19 +1,19 @@
 var score;
 
-$(document).ready(function() {
-	score = 0;
+// $(document).ready(function() {
+// 	score = 0;
 
-	$("#math-next").on('click', function () {
-		var answer = $('input[name="radio-choice-1"]:checked').attr('id')
+// 	$("#math-next").on('click', function () {
+// 		var answer = $('input[name="radio-choice-1"]:checked').attr('id')
 
-		if (answer.hasClass('correct')) {
-			score = score + 1;
+// 		if (answer.hasClass('correct')) {
+// 			score = score + 1;
 			
-		} else {
-			score = score + 0;
-		};
-	});
-});
+// 		} else {
+// 			score = score + 0;
+// 		};
+// 	});
+// });
 
 
 $(function () {
