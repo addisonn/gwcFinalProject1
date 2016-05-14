@@ -50,8 +50,7 @@ function tCheck()
 		else if(tAnswers[tContent] == "DonaldTrump" && who == "KanyeWest")
 		{
 			$("#tAnswer").text(kWrong);
-		}
-		
+		}		
 		if(tContent == 9)
 		{
 			$("#check").hide();

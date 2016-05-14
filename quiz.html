@@ -7,7 +7,8 @@
 		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<script type="text/javascript" src="tvsk.js"></script>
 		<link rel="stylesheet" type="text/css" href="quiz.css" />
-		<script type="text/javascript" src="gwc_jqmobile.js"></script>
+		<script type="text/javascript" src="math_test.js"></script>
+		<script type="text/javascript" src="lon.js"></script>
 	 
     <script>
         $(document).ready(function() {            
@@ -35,7 +36,7 @@
     <ul data-role="listview" data-inset="true" data-filter="true">
       <li><a href="#TvsK">TRUMP vs. KANYE: Who said it?</a></li>
       <li><a href="#test-math-test">Test Math Test</a></li>
-      <li><a href="#">Page Four</a></li>
+      <li><a href="#LoN">Law or No Law</a></li>
       <li><a href="#">Page Five</a></li>
       <li><a href="#">Page Six</a></li>
     </ul>
@@ -71,11 +72,10 @@
         <label for="KanyeWest"><img id="image1" src="https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/10/enhanced/webdr08/enhanced-buzz-14283-1454341638-4.jpg?no-auto" alt="HTML tutorial" style="width:210px;height:150px;border:0"><br>Kanye West</label>
     </fieldset>
     <br>
-    <p id="tAnswer"></p>
+    <p id="tAnswer" align="center"></p>
     <button id="check" class="ui-btn" onclick="tCheck()">Check Answer</button>
-
     <button id="tNextButton" class="ui-btn" onclick="tNext()">Next Question</button>
-	  <a id="TvsKEndButton" href="#TvsKEnd" class="ui-btn">Submit Quiz</a>
+	<a id="TvsKEndButton" href="#TvsKEnd" class="ui-btn">Submit Quiz</a>
 
   </div>
 
