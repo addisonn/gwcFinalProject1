@@ -9,6 +9,7 @@ var kCorrect = "Yup! Kanye West said it, good job!";
 var dWrong = "AWWW...Nope, it's actually Kanye West who said it.";
 var kWrong = "AWWW...Nope, it's actually Donald Trump who said it.";
 var dCorrect = "Yup! Donald Trump said it, good job!";
+var tAnswers = ["KanyeWest", "DonaldTrump", "KanyeWest", "DonaldTrump", "KanyeWest", "DonaldTrump", "KanyeWest",  "DonaldTrump", "KanyeWest", "DonaldTrump"];
 var tImages = ["https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/10/enhanced/webdr04/enhanced-31163-1454341508-11.jpg?no-auto", 
 "https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/10/enhanced/webdr02/enhanced-14536-1454341693-5.jpg?no-auto",
 "https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/11/enhanced/webdr14/enhanced-15383-1454344242-1.jpg?no-auto",
@@ -16,6 +17,9 @@ var tImages = ["https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/10/enh
 "https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/11/enhanced/webdr10/enhanced-759-1454344101-1.jpg?no-auto",
 "https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/11/enhanced/webdr15/enhanced-29613-1454343265-9.jpg?no-auto", 
 "https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/11/enhanced/webdr06/enhanced-25304-1454342767-1.jpg?no-auto",
+"https://img.buzzfeed.com/buzzfeed-static/static/2016-02/2/14/enhanced/webdr15/enhanced-27321-1454440019-11.jpg?no-auto",
+"https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/10/enhanced/webdr08/enhanced-13781-1454341608-1.jpg?no-auto",
+"https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/11/enhanced/webdr12/enhanced-10495-1454344161-1.jpg?no-auto"]
 function tCheck()
 {
 	var who = $('input[name="radio-choice-0"]:checked').attr('id');
