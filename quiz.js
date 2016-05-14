@@ -53,3 +53,11 @@ function tNext()
 		document.getElementById("tImg").src = "https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/11/enhanced/webdr14/enhanced-15383-1454344242-1.jpg?no-auto";
 	}
 }
+
+$(document).on('pageshow', '#home', function() {
+	$('#math-header').hide();
+})
+
+$(document).on('pageshow', '#math-quiz', function() {
+	$('math-header').show();
+})
