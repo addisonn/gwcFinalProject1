@@ -40,7 +40,7 @@
 //             reverse: true
 //         });
 //     } else {
-//         alert('There\'s no previous page');
+//         alert('There\'s no previous location.href='index.html';page');
 //     }
 // });
 
@@ -58,7 +58,8 @@ var questionNumber = 0;
 
 $(document).on('click', '#math-next-btn', function () {
         if (questionNumber > 4) {
-            alert('You scored '+ score +' out of 5.');
+            location.href='#results-math-test';
+            $('#math-results-popup').html('You scored '+ score +' out of 5.')
         } 
 });
 
