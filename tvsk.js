@@ -78,5 +78,5 @@ function tNext()
 	$("#tNextButton").hide();
 	$("#tImg").toggle( "slide" );
 	document.getElementById("tImg").src = tImages[tContent];
-	$("#tImg").fadeIn("slow");
+	$("#tImg").toggle( "slide" );
 }
