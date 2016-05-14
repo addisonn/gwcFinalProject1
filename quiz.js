@@ -7,6 +7,8 @@ var tCorrect = 0;
 var tContent = 0;
 var kCorrect = "Yup! Kanye said it, good job!";
 var dWrong = "AWWW...Nope, it's actually Kanye who said it.";
+var kWrong = "AWWW...Nope, it's actually Donald Trump who said it.";
+var dCorrect = "Yup! Donald Trump said it, good job!";
 var tAnswers = ["KanyeWest", "DonaldTrump", "KanyeWest"];
 function tCheck()
 {
