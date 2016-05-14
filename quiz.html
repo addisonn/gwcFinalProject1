@@ -5,9 +5,9 @@
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-		<script type="text/javascript" src="quiz.js"></script>
+		<script type="text/javascript" src="tvsk.js"></script>
 		<link rel="stylesheet" type="text/css" href="quiz.css" />
-    <script type="text/javascript" src="gwc_jqmobile.js"></script>
+		<script type="text/javascript" src="gwc_jqmobile.js"></script>
 	 
     <script>
         $(document).ready(function() {            
@@ -73,11 +73,27 @@
     <br>
     <p id="tAnswer"></p>
     <button id="check" class="ui-btn" onclick="tCheck()">Check Answer</button>
+<<<<<<< HEAD
     <button id="tNextButton" class="ui-btn ui-btn-icon-right ui-icon-carat-r" onclick="tNext()">Next Question</button>
+=======
+    <button id="tNextButton" class="ui-btn" onclick="tNext()">Next Question</button>
+	<a id="TvsKEndButton" href="#TvsKEnd" class="ui-btn">Submit Quiz</a>
+>>>>>>> e8e935bbc8b8f1f0585563d845a322486eb01442
   </div>
 
 </div> 
 
+<div data-role="page" data-dialog="true" id="TvsKEnd">
+  <div data-role="header">
+    <h1>TRUMP vs. KANYE</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p id="TvsKFinish"></p>
+    <a href="#home" class="ui-btn">Go Home</a>
+  </div>
+
+</div> 
 
 <!-- test math quiz -->
 <div data-role="page" data-dialog="true" id="test-math-test">
