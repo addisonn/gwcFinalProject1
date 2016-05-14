@@ -27,11 +27,11 @@
 <body> 
 <div data-role="page" id="home">
 	<div data-role="header">
-		<h1>Fun Quiz</h1>
+		<h1>Quizzes!</h1>
 	</div>
 
 	<div data-role="content">	
-		<p>In the mood for soome fun quizzes? You've come to the right place! Here are some interesting quizzes I found on the Internet:)))</p>		
+		<p>In the mood for some quizzes? You've come to the right place! Here are some quizzes that we coded ourselves from scratch for our Girls Who Code final project</p>		
     <ul data-role="listview" data-inset="true" data-filter="true">
       <li><a href="#TvsK">TRUMP vs. KANYE: Who said it?</a></li>
       <li><a href="#test-math-test">Test Math Test</a></li>
@@ -49,7 +49,7 @@
   </div>
 
   <div data-role="main" class="ui-content">
-    <p>Donald Trump and Kanye West both said a lot of shocking things, or well, twitted about it. Can you tell which one of them said what? Take the quiz to figure out!</p>
+    <p>Donald Trump and Kanye West both said a lot of shocking things, or well, tweeted about it. Can you tell which one of them said what? Take the quiz to see!</p>
     <a href="#TvsKQuiz" class="ui-btn">Start!</a>
   </div>
 
@@ -88,7 +88,7 @@
 
   <div data-role="main" class="ui-content">
     <p id="TvsKFinish"></p>
-    <a href="#home" class="ui-btn">Go Home</a>
+    <a href="#home" class="ui-btn">Back to Home</a>
   </div>
 
 </div> 
@@ -96,17 +96,20 @@
 <!-- test math quiz -->
 <div data-role="page" data-dialog="true" id="test-math-test">
   <div data-role="header">
-    <h1>Test Math Quiz</h1>
+    <h1>Math Quiz</h1>
   </div>
 
   <div data-role="main" class="ui-content">
-    <p>Test Math Quiz blah blah blah</p>
+    <p>Do this math test to test your 7th grade math skills</p>
     <a href="#test-page1" class="ui-btn">Start!</a>
   </div>
 </div> 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/master
 <div data-role="page" id="test-page1">
 <div data-role="header"><h1>Math Test</h1></div>
 
@@ -128,6 +131,17 @@
     <button id="math-next-btn" class="ui-btn ui-btn-icon-right ui-icon-carat-r" onclick="nextMath()">Next Question</button>
   </div>
 </div>
+
+<div data-role="page" data-dialog="true" id="results-math-test">
+  <div data-role="header">
+    <h1>Results</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p id="math-results-popup"></p>
+    <a href="#home" class="ui-btn">Back to Home</a>
+  </div>
+</div> 
 
 </body>
 
