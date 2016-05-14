@@ -34,7 +34,7 @@
 		<p>In the mood for soome fun quizzes? You've come to the right place! Here are some interesting quizzes I found on the Internet:)))</p>		
     <ul data-role="listview" data-inset="true" data-filter="true">
       <li><a href="#TvsK">TRUMP vs. KANYE: Who said it?</a></li>
-      <li><a href="#math-test">Math Test</a></li>
+      <li><a href="#test-math-test">Test Math Test</a></li>
       <li><a href="#">Page Four</a></li>
       <li><a href="#">Page Five</a></li>
       <li><a href="#">Page Six</a></li>
@@ -65,7 +65,7 @@
     <img id="tImg" src="https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/10/enhanced/webdr04/enhanced-31163-1454341508-11.jpg?no-auto" alt="HTML tutorial" style="width:500px;height:250px;border:0">
     <p>Trump or Kanye: Who said it?</p>
     <fieldset data-role="controlgroup" data-type="horizontal">
-    <input type="radio" name="radio-choice-0" id="DonaldTrump">
+        <input type="radio" name="radio-choice-0" id="DonaldTrump">
         <label for="DonaldTrump"><img id="image1" src="http://www.bostonherald.com/sites/default/files/media/2016/02/17/GOP%202016%20Trump_Prus%20(7)_0.jpg" alt="HTML tutorial" style="width:210px;height:150px;border:0"><br>Donald Trump</label>
         <input type="radio" name="radio-choice-0" id="KanyeWest" class="custom">
         <label for="KanyeWest"><img id="image1" src="https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/10/enhanced/webdr08/enhanced-buzz-14283-1454341638-4.jpg?no-auto" alt="HTML tutorial" style="width:210px;height:150px;border:0"><br>Kanye West</label>
@@ -79,14 +79,52 @@
 </div> 
 
 
+<!-- test math quiz -->
+<div data-role="page" data-dialog="true" id="test-math-test">
+  <div data-role="header">
+    <h1>Test Math Quiz</h1>
+  </div>
 
+  <div data-role="main" class="ui-content">
+    <p>Test Math Quiz blah blah blah</p>
+    <a href="#test-page1" class="ui-btn">Start!</a>
+  </div>
+</div> 
 
+<div data-role="header" data-theme="a">
+    <div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-left">
+        <a href="#" id="math-next" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Next</a>
+    </div>
+    <h6>Math Quiz</h6>
+</div>
+
+<div data-role="page" id="test-page1">
+  <div data-role="main" class="ui-content">
+    <p>1. Which of these are equal to 83.041?</p>
+    <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" />
+    <label for="radio-choice-1">eighty-three and forty-one tenths</label>
+
+    <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2" />
+    <label for="radio-choice-2">8 &times; 10 + 3 &times; 1 + 4 &times; 1/10 + 1 &times; 1/100</label>
+
+    <input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3" class="correct" />
+    <label for="radio-choice-3">eighty-three and forty-one hundredths</label>
+
+    <input type="radio" name="radio-choice-1" id="radio-choice-4" value="choice-4" />
+    <label for="radio-choice-4">8 &times; 10 + 3 &times; 1 + 4 &times; 1/1000 + 1 &times; 1/100</label>
+    
+    <br>
+    <p id="tAnswer"></p>
+    <button id="check" class="ui-btn" onclick="tCheck()">Check Answer</button>
+    <button id="tNextButton" class="ui-btn" onclick="tNext()">Next Question</button>
+  </div>
+</div>
 
 
 
 
 <!--Math test-->
-<div data-role="page" data-dialog="true" id="math-test">
+<!-- <div data-role="page" data-dialog="true" id="math-test">
   <div data-role="header">
     <h1>Math Quiz</h1>
   </div>
@@ -96,9 +134,9 @@
     <a href="#welcome-page" class="ui-btn">Start!</a>
   </div>
 </div> 
+ -->
 
-
-  <!-- <div data-role="header" data-theme="a" id="math-header">
+  <!-- commented out <div data-role="header" data-theme="a" id="math-header">
        <h1 style="padding-top: 20px;">Math Test</h1>
     <div id="popupMenu" data-theme="a">
         <ul data-inset="true" style="list-style-type: none; padding-right: 20px; padding-left: 20px;">
@@ -108,7 +146,7 @@
     </div>
   </div> -->
 
-<div data-role="header" data-theme="a">
+<!-- <div data-role="header" data-theme="a">
     <div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-left">
         <a href="#" id="math-back" class="ui-btn ui-btn-icon-left ui-icon-carat-l">Back</a>
         <a href="#" id="math-next" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Next</a>
@@ -221,7 +259,7 @@ yards. What is the patio's width, in yards?</legend>
   <div data-role="page" id="result-page">
       <a href="#" id="submit-button" class="ui-btn">Submit</a>
       <p id="test-results"></p>
-  </div>
+  </div> -->
 
 </body>
 
