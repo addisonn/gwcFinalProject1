@@ -91,16 +91,18 @@
   </div>
 </div> 
 
-<div data-role="header" data-theme="a">
+<!-- <div data-role="header" data-theme="a">
     <div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-left">
         <a href="#" id="math-next" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Next</a>
     </div>
     <h6>Math Quiz</h6>
-</div>
+</div> -->
 
 <div data-role="page" id="test-page1">
+<div data-role="header"><h1>Math Test</h1></div>
+
   <div data-role="main" class="ui-content">
-    <p>1. Which of these are equal to 83.041?</p>
+    <p id='math-question'>1. Which of these are equal to 83.041?</p>
     <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" />
     <label for="radio-choice-1">eighty-three and forty-one tenths</label>
 
@@ -114,9 +116,7 @@
     <label for="radio-choice-4">8 &times; 10 + 3 &times; 1 + 4 &times; 1/1000 + 1 &times; 1/100</label>
     
     <br>
-    <p id="tAnswer"></p>
-    <button id="check" class="ui-btn" onclick="tCheck()">Check Answer</button>
-    <button id="tNextButton" class="ui-btn" onclick="tNext()">Next Question</button>
+    <button id="math-next-btn" class="ui-btn" onclick="nextMath()">Next Question</button>
   </div>
 </div>
 
