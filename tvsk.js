@@ -76,5 +76,7 @@ function tNext()
 	$("#tAnswer").text("");
 	$("#check").show();
 	$("#tNextButton").hide();
+	$("#tImg").toggle( "slide" );
 	document.getElementById("tImg").src = tImages[tContent];
+	$("#tImg").fadeIn("slow");
 }
