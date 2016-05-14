@@ -70,12 +70,3 @@ function tNext()
 		document.getElementById("tImg").src = tImages[tContent];
 	}
 }
-
-$(document).on('pageshow', '#home', function() {
-	$('#math-header').hide();
-})
-
-$(document).on('pageshow', '#math-quiz', function() {
-	$('math-header').show();
-})
-

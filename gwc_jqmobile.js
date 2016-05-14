@@ -59,7 +59,7 @@ var questionNumber = 0;
 $(document).on('click', '#math-next-btn', function () {
         if (questionNumber > 4) {
             location.href='#results-math-test';
-            $('#math-results-popup').html('You scored '+ score +' out of 5.')
+            $('#math-results-popup').html('Congratulations! You completed this quiz. You scored '+ score +' out of 5.')
         } 
 });
 
