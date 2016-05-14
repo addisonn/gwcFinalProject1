@@ -57,6 +57,7 @@
 
 <div data-role="page" id="TvsKQuiz">
   <div data-role="header">
+    <!-- <a href="#home"> -->
     <h1>TRUMP vs. KANYE</h1>
   </div>
 
@@ -94,10 +95,10 @@
     <p>Math Quiz blah blah blah</p>
     <a href="#welcome-page" class="ui-btn">Start!</a>
   </div>
-
 </div> 
 
-  <div data-role="header" data-theme="a" id="math-header">
+
+  <!-- <div data-role="header" data-theme="a" id="math-header">
        <h1 style="padding-top: 20px;">Math Test</h1>
     <div id="popupMenu" data-theme="a">
         <ul data-inset="true" style="list-style-type: none; padding-right: 20px; padding-left: 20px;">
@@ -105,12 +106,18 @@
             <li><a href="#" id="math-next" class="ui-btn ui-btn-icon-right ui-icon-carat-r ui-btn-right">Next</a></li>
         </ul>
     </div>
-  </div>
+  </div> -->
 
-
+<div data-role="header" data-theme="a">
+    <div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-left">
+        <a href="#" id="math-back" class="ui-btn ui-btn-icon-left ui-icon-carat-l">Back</a>
+        <a href="#" id="math-next" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Next</a>
+    </div>
+    <h6>My header</h6>
+</div>
 
   <div data-role="page" id="welcome-page">
-    <h1>This is a math test</h1>
+    <h1>This is a math test</h1>    
   </div>
 
   <div data-role="page" id="page1">
@@ -129,6 +136,7 @@
               <input type="radio" name="radio-choice-1" id="radio-choice-4" value="choice-4" />
               <label for="radio-choice-4">8 &times; 10 + 3 &times; 1 + 4 &times; 1/1000 + 1 &times; 1/100</label>
         </fieldset>
+        <div data-role="footer" id="foo1"></div>
     </div>
   </div>
 
