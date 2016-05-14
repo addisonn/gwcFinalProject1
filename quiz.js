@@ -58,6 +58,11 @@ $(document).on('pageshow', '#home', function() {
 	$('#math-header').hide();
 })
 
+$(document).on('pageshow', '#TvsKQuiz', function() {
+	$('#math-header').hide();
+})
+
 $(document).on('pageshow', '#math-quiz', function() {
 	$('math-header').show();
 })
+
