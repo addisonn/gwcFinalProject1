@@ -1,6 +1,7 @@
 $(document).on("pageshow","#TvsKQuiz",function(){
   //alert("pageshow event fired - pagetwo is now shown");
   $("#tNextButton").hide();
+  $("#TvsKEndButton").hide();
 });
 
 var tCorrect = 0;
@@ -19,7 +20,7 @@ var tImages = ["https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/10/enh
 "https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/11/enhanced/webdr06/enhanced-25304-1454342767-1.jpg?no-auto",
 "https://img.buzzfeed.com/buzzfeed-static/static/2016-02/2/14/enhanced/webdr15/enhanced-27321-1454440019-11.jpg?no-auto",
 "https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/10/enhanced/webdr08/enhanced-13781-1454341608-1.jpg?no-auto",
-"https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/11/enhanced/webdr12/enhanced-10495-1454344161-1.jpg?no-auto"]
+"https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/11/enhanced/webdr12/enhanced-10495-1454344161-1.jpg?no-auto"];
 function tCheck()
 {
 	var who = $('input[name="radio-choice-0"]:checked').attr('id');
@@ -48,9 +49,19 @@ function tCheck()
 		{
 			$("#tAnswer").text(kWrong);
 		}
-		$("#check").hide();
-		$("#tNextButton").show();
-		tContent ++;
+		
+		if(tContent == 9)
+		{
+			$("#check").hide();
+			$("#TvsKFinish").text("Congratulations! You've completed the quiz. You got " + tCorrect " out of 10.");
+			$("#TvsKEndButton").show();
+		}
+		else
+		{
+			$("#check").hide();
+			$("#tNextButton").show();
+			tContent ++;
+		}
 	}	
 }
 
@@ -70,12 +81,3 @@ function tNext()
 		document.getElementById("tImg").src = tImages[tContent];
 	}
 }
-
-$(document).on('pageshow', '#home', function() {
-	$('#math-header').hide();
-})
-
-$(document).on('pageshow', '#math-quiz', function() {
-	$('math-header').show();
-})
-
