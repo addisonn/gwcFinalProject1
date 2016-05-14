@@ -21,6 +21,8 @@ var tImages = ["https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/10/enh
 "https://img.buzzfeed.com/buzzfeed-static/static/2016-02/2/14/enhanced/webdr15/enhanced-27321-1454440019-11.jpg?no-auto",
 "https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/10/enhanced/webdr08/enhanced-13781-1454341608-1.jpg?no-auto",
 "https://img.buzzfeed.com/buzzfeed-static/static/2016-02/1/11/enhanced/webdr12/enhanced-10495-1454344161-1.jpg?no-auto"];
+
+
 function tCheck()
 {
 	var who = $('input[name="radio-choice-0"]:checked').attr('id');
@@ -53,7 +55,9 @@ function tCheck()
 		if(tContent == 9)
 		{
 			$("#check").hide();
-			$("#TvsKFinish").text("Congratulations! You've completed the quiz. You got " + tCorrect " out of 10.");
+			var done = "Congratulations! You've completed the quiz. You got ";
+			var finishSentence = done.concat(tCorrect, " out of 10.");
+			$("#TvsKFinish").html(finishSentence);
 			$("#TvsKEndButton").show();
 		}
 		else
@@ -72,12 +76,5 @@ function tNext()
 	$("#tAnswer").text("");
 	$("#check").show();
 	$("#tNextButton").hide();
-	if(tContent == tImages.length)
-	{
-		window.alert("The number of your correct answer is: " + tCorrect + " / " + tImages.length);
-	}
-	else
-	{
-		document.getElementById("tImg").src = tImages[tContent];
-	}
+	document.getElementById("tImg").src = tImages[tContent];
 }
