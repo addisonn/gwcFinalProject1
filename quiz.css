@@ -1,21 +1,3 @@
-img#tImg
-{
-	display: block;
-    margin-left: auto;
-    margin-right: auto
-} 
-
-.radio-label {
-   display: inline-block;
-    vertical-align: top;
-    margin-right: 3%;
-}
-.radio-input {
-   display: inline-block;
-    vertical-align: top;
-}
-
-
 /*html that i don't want to delete but i also don't want it in my code:
 <!-- <div data-role="page" data-dialog="true" id="math-test">
   <div data-role="header">
