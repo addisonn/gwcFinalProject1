@@ -53,7 +53,7 @@ function tCheck()
 		}		
 		if(tContent == 9)
 		{
-			$("#check").hide();
+			$("#tCheckButton").hide();
 			var done = "Congratulations! You've completed the quiz. You got ";
 			var finishSentence = done.concat(tCorrect, " out of 10.");
 			$("#TvsKFinish").html(finishSentence);
@@ -61,7 +61,7 @@ function tCheck()
 		}
 		else
 		{
-			$("#check").hide();
+			$("#tCheckButton").hide();
 			$("#tNextButton").show();
 			tContent ++;
 		}
@@ -73,7 +73,7 @@ function tNext()
 	$('input[name="radio-choice-0"]').prop('checked', false);
 	$("input[name='radio-choice-0']").checkboxradio("refresh");
 	$("#tAnswer").text("");
-	$("#check").show();
+	$("#tCheckButton").show();
 	$("#tNextButton").hide();
 	$("#tImg").toggle( "slide" );
 	document.getElementById("tImg").src = tImages[tContent];
