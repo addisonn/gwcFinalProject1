@@ -2,6 +2,7 @@ $(document).on("pageshow","#TvsKQuiz",function(){
   //alert("pageshow event fired - pagetwo is now shown");
   $("#tNextButton").hide();
   $("#TvsKEndButton").hide();
+
 });
 
 var tCorrect = 0;
