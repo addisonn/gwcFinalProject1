@@ -2,6 +2,10 @@ $(document).on("pageshow","#LoNQuiz",function(){
   //alert("pageshow event fired - pagetwo is now shown");
   $("#lNextButton").hide();
   $("#LoNEndButton").hide();
+  if(lContent == 9)
+  {
+	location.reload();
+  }
 });
 
 var lCorrect = 0;

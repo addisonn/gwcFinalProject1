@@ -2,6 +2,10 @@ $(document).on("pageshow","#TvsKQuiz",function(){
   //alert("pageshow event fired - pagetwo is now shown");
   $("#tNextButton").hide();
   $("#TvsKEndButton").hide();
+  if(tContent == 9)
+  {
+	location.reload();
+  }
 });
 
 var tCorrect = 0;
