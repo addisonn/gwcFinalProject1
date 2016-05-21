@@ -35,11 +35,11 @@
 	</div>
 
 	<div data-role="content">	
-		<p>In the mood for some quizzes? You've come to the right place! Here are some quizzes that we coded ourselves from scratch for our Girls Who Code final project</p>		
+		<p>In the mood for some quizzes? You've come to the right place! Here are some quizzes that we coded ourselves from scratch using jQuery Mobile for our Girls Who Code final project</p>		
     <ul data-role="listview" data-inset="true" data-filter="true">
       <li><a href="#TvsK">TRUMP vs. KANYE: Who said it?</a></li>
       <li><a href="#test-math-test">Math Quiz</a></li>
-      <li><a href="#LoN">Is this really a law?</a></li>
+      <li><a href="#LoN">Law or Not a Law!</a></li>
     </ul>
 	</div>
 </div>
@@ -111,21 +111,21 @@
 	<div data-role="header"><h1>Math Test</h1></div>
 
 	<div data-role="main" class="ui-content">
-		<p id='math-question'>1. Which of these is equal to 83.041?</p>
+		<p id='math-question' style="width: 500px;text-align:center;margin: 0 auto;padding: 25px;">Which of these is equal to 83.041?</p>
 		<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" />
 		<label for="radio-choice-1">eighty-three and forty-one tenths</label>
 
 		<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2" />
-		<label for="radio-choice-2">8 &times; 10 + 3 &times; 1 + 4 &times; 1/10 + 1 &times; 1/100</label>
+		<label for="radio-choice-2">8 &times; 10 + 3 &times; 1 + 4 &times; <sup>1</sup>&frasl;<sub>10</sub> + 1 &times; <sup>1</sup>&frasl;<sub>100</sub></label>
 
 		<input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3" class="correct" />
 		<label for="radio-choice-3">eighty-three and forty-one hundredths</label>
 
 		<input type="radio" name="radio-choice-1" id="radio-choice-4" value="choice-4" />
-		<label for="radio-choice-4">8 &times; 10 + 3 &times; 1 + 4 &times; 1/1000 + 1 &times; 1/100</label>
+		<label for="radio-choice-4">8 &times; 10 + 3 &times; 1 + 4 &times; <sup>1</sup>&frasl;<sub>1000</sub> + 1 &times; <sup>1</sup>&frasl;<sub>100</sub></label>
 		
 		<br>
-		<button id="math-next-btn" class="ui-btn ui-btn-icon-right ui-icon-carat-r" onclick="nextMath()">Next Question</button>
+		<button id="math-next-btn" class="ui-btn" onclick="nextMath()" style="width: 500px;text-align:center;margin: 0 auto;">Next Question</button>
   </div>
 </div>
 
